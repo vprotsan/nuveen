@@ -15,6 +15,11 @@ html {
                 margin: 1.2em 0 1.8em;
                 line-height: 1.2;
                 letter-spacing: 0.5px;
+                text-align: center;
+
+                @include mq('tablet-wide'){
+                    text-align: left;
+                }
             }
         }
 
@@ -35,6 +40,11 @@ html {
             line-height: 1.2;
             letter-spacing: 1px;
             color: #263746;
+            text-align: center;
+
+            @include mq('tablet-wide'){
+                text-align: left;
+            }
 
             span {
                 color: #25b34b;
@@ -43,27 +53,56 @@ html {
 
         .container-fluid {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             max-width: 1500px;
             margin: 0 auto;
+            padding: 0 15px;
+
+            @include mq('tablet'){
+                flex-direction: row;
+                padding: 0;
+            }
 
             .inner-container {
 
+                display: none;
+
+                @include mq('tablet-wide'){
+                    display: block;
+                }
+
                 &:first-child {
+                    display:block;
                     width: 100%;
                     max-width: 840px;
-                    padding-left: 253px;
-                    padding-top: 7em;
-                    padding-right: 2em;
+                    margin: 7em auto;
                     max-width: 545px;
+
+                    @include mq('tablet-wide'){
+                        margin: 0;
+                        padding-left: 253px;
+                        padding-top: 7em;
+                        padding-right: 2em;
+                    }
                 }
 
                 img {
                     width: 100%;
+                    max-height: 860px;
+
+                        @include mq('tablet-wide'){
+                            width: auto;
+                            height: 100%;
+                        }
                 }
 
                 div {
-                    max-width: 430px;
+                    margin: 0 auto;
+
+                    @include mq('tablet-wide'){
+                        margin: 0;
+                        max-width: 430px;
+                    }
 
                     & > a {
                         text-align: center;
@@ -80,6 +119,12 @@ html {
     form {
         margin-bottom: 1rem;
         max-width: 430px;
+        margin: 0 auto;
+
+        @include mq('tablet-wide'){
+            margin: 0;
+            max-width: 430px;
+        }
     }
 
     input::-webkit-input-placeholder {color:$grey;}

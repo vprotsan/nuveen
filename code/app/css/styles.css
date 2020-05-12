@@ -65,7 +65,11 @@ html {
       font-style: italic;
       margin: 1.2em 0 1.8em;
       line-height: 1.2;
-      letter-spacing: 0.5px; }
+      letter-spacing: 0.5px;
+      text-align: center; }
+      @media only screen and (min-width: 1024px) {
+        html body header p {
+          text-align: left; } }
     html body .img-wrapper {
       position: absolute;
       top: 0;
@@ -78,34 +82,67 @@ html {
       font-size: 2.2em;
       line-height: 1.2;
       letter-spacing: 1px;
-      color: #263746; }
+      color: #263746;
+      text-align: center; }
+      @media only screen and (min-width: 1024px) {
+        html body h1 {
+          text-align: left; } }
       html body h1 span {
         color: #25b34b; }
     html body .container-fluid {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       max-width: 1500px;
-      margin: 0 auto; }
-      html body .container-fluid .inner-container:first-child {
-        width: 100%;
-        max-width: 840px;
-        padding-left: 253px;
-        padding-top: 7em;
-        padding-right: 2em;
-        max-width: 545px; }
-      html body .container-fluid .inner-container img {
-        width: 100%; }
-      html body .container-fluid .inner-container div {
-        max-width: 430px; }
-        html body .container-fluid .inner-container div > a {
-          text-align: center;
+      margin: 0 auto;
+      padding: 0 15px; }
+      @media only screen and (min-width: 768px) {
+        html body .container-fluid {
+          flex-direction: row;
+          padding: 0; } }
+      html body .container-fluid .inner-container {
+        display: none; }
+        @media only screen and (min-width: 1024px) {
+          html body .container-fluid .inner-container {
+            display: block; } }
+        html body .container-fluid .inner-container:first-child {
           display: block;
-          color: #707070;
-          font-size: 1.15em;
-          padding: 1em 0 1.2em; }
+          width: 100%;
+          max-width: 840px;
+          margin: 7em auto;
+          max-width: 545px; }
+          @media only screen and (min-width: 1024px) {
+            html body .container-fluid .inner-container:first-child {
+              margin: 0;
+              padding-left: 253px;
+              padding-top: 7em;
+              padding-right: 2em; } }
+        html body .container-fluid .inner-container img {
+          width: 100%;
+          max-height: 860px; }
+          @media only screen and (min-width: 1024px) {
+            html body .container-fluid .inner-container img {
+              width: auto;
+              height: 100%; } }
+        html body .container-fluid .inner-container div {
+          margin: 0 auto; }
+          @media only screen and (min-width: 1024px) {
+            html body .container-fluid .inner-container div {
+              margin: 0;
+              max-width: 430px; } }
+          html body .container-fluid .inner-container div > a {
+            text-align: center;
+            display: block;
+            color: #707070;
+            font-size: 1.15em;
+            padding: 1em 0 1.2em; }
   html form {
     margin-bottom: 1rem;
-    max-width: 430px; }
+    max-width: 430px;
+    margin: 0 auto; }
+    @media only screen and (min-width: 1024px) {
+      html form {
+        margin: 0;
+        max-width: 430px; } }
   html input::-webkit-input-placeholder {
     color: #707070; }
   html input::-moz-placeholder {
