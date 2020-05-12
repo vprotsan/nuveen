@@ -61,9 +61,9 @@ html {
     position: relative;
     height: 100vh; }
     html body header p {
-      font-family: "DM Serif Text", serif;
+      font-family: "Gelasio", serif;
       font-style: italic;
-      margin: 2em 0;
+      margin: 1.2em 0 2.2em;
       line-height: 1.4; }
     html body .img-wrapper {
       position: absolute;
@@ -73,26 +73,29 @@ html {
         max-width: 253px;
         width: 100%; }
     html body h1 {
-      font-family: "DM Serif Text", serif;
+      font-family: "Gelasio", serif;
       font-size: 2.2em;
       line-height: 1.2;
+      letter-spacing: 1px;
       color: #263746; }
       html body h1 span {
         color: #25b34b; }
     html body .container-fluid {
       display: flex;
-      flex-direction: row; }
+      flex-direction: row;
+      max-width: 1300px;
+      margin: 0 auto; }
       html body .container-fluid .inner-container:first-child {
         width: 100%;
         max-width: 840px;
         padding-left: 253px;
-        padding-top: 7em; }
+        padding-top: 7em;
+        padding-right: 2em; }
       html body .container-fluid .inner-container img {
         width: 100%; }
   html form {
-    margin-bottom: 4rem;
-    max-width: 353px;
-    max-width: 370px; }
+    margin-bottom: 1rem;
+    max-width: 545px; }
   html input::-webkit-input-placeholder {
     color: #707070; }
   html input::-moz-placeholder {
@@ -102,6 +105,7 @@ html {
   html input:-ms-input-placeholder {
     color: #707070; }
   html .form-input, html .form-submit {
+    box-sizing: border-box;
     font-family: sans-serif;
     font-size: 1rem;
     border-radius: 0px;
@@ -116,3 +120,7 @@ html {
     color: #ffffff;
     text-align: center;
     border: 0; }
+  html .small-txt {
+    font-size: 0.7em;
+    line-height: 1.2;
+    padding: 1em 0; }
