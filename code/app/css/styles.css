@@ -63,8 +63,9 @@ html {
     html body header p {
       font-family: "Gelasio", serif;
       font-style: italic;
-      margin: 1.2em 0 2.2em;
-      line-height: 1.4; }
+      margin: 1.2em 0 1.8em;
+      line-height: 1.2;
+      letter-spacing: 0.5px; }
     html body .img-wrapper {
       position: absolute;
       top: 0;
@@ -83,19 +84,28 @@ html {
     html body .container-fluid {
       display: flex;
       flex-direction: row;
-      max-width: 1300px;
+      max-width: 1500px;
       margin: 0 auto; }
       html body .container-fluid .inner-container:first-child {
         width: 100%;
         max-width: 840px;
         padding-left: 253px;
         padding-top: 7em;
-        padding-right: 2em; }
+        padding-right: 2em;
+        max-width: 545px; }
       html body .container-fluid .inner-container img {
         width: 100%; }
+      html body .container-fluid .inner-container div {
+        max-width: 430px; }
+        html body .container-fluid .inner-container div > a {
+          text-align: center;
+          display: block;
+          color: #707070;
+          font-size: 1.15em;
+          padding: 1em 0 1.2em; }
   html form {
     margin-bottom: 1rem;
-    max-width: 545px; }
+    max-width: 430px; }
   html input::-webkit-input-placeholder {
     color: #707070; }
   html input::-moz-placeholder {
@@ -114,12 +124,16 @@ html {
     padding: 0.9rem 1.2em;
     text-align: left;
     width: 100%;
-    margin: 0.5rem auto; }
+    margin: 0.5rem auto;
+    letter-spacing: 0.3px; }
   html .form-submit {
     background-color: #25b34b;
     color: #ffffff;
     text-align: center;
-    border: 0; }
+    border: 0;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-top: 1.9em; }
   html .small-txt {
     font-size: 0.7em;
     line-height: 1.2;

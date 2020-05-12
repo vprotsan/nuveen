@@ -12,8 +12,9 @@ html {
             p {
                 font-family: $body-text1;
                 font-style: italic;
-                margin: 1.2em 0 2.2em;
-                line-height: 1.4;
+                margin: 1.2em 0 1.8em;
+                line-height: 1.2;
+                letter-spacing: 0.5px;
             }
         }
 
@@ -43,7 +44,7 @@ html {
         .container-fluid {
             display: flex;
             flex-direction: row;
-            max-width: 1300px;
+            max-width: 1500px;
             margin: 0 auto;
 
             .inner-container {
@@ -54,10 +55,23 @@ html {
                     padding-left: 253px;
                     padding-top: 7em;
                     padding-right: 2em;
+                    max-width: 545px;
                 }
 
                 img {
                     width: 100%;
+                }
+
+                div {
+                    max-width: 430px;
+
+                    & > a {
+                        text-align: center;
+                        display: block;
+                        color: $grey;
+                        font-size: 1.15em;
+                        padding: 1em 0 1.2em;
+                    }
                 }
             }
         }
@@ -65,7 +79,7 @@ html {
 
     form {
         margin-bottom: 1rem;
-        max-width: 545px;
+        max-width: 430px;
     }
 
     input::-webkit-input-placeholder {color:$grey;}
@@ -85,6 +99,7 @@ html {
         text-align: left;
         width: 100%;
         margin: 0.5rem auto;
+        letter-spacing: 0.3px;
     }
 
     .form-input {
@@ -97,6 +112,9 @@ html {
         color: #ffffff;
         text-align: center;
         border: 0;
+        font-weight: 800;
+        letter-spacing: 1px;
+        margin-top: 1.9em;
     }
 
     .small-txt {
